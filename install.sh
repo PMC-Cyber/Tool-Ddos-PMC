@@ -191,6 +191,10 @@ pip install tqdm
 sudo apt-get install python-pip
 pip install pyfiglet
 pip install --upgrade setuptools  
+pip3 install requests
+pip3 install fake_headers
+pip3 install colorama
+pip3 install click
 sleep 1
 clear
 echo " "
@@ -329,6 +333,49 @@ else
 printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
 sleep 1
 ddos1
+fi
+}
+
+#----------------------------Banner pmc ----------------------------#
+ddos2() {
+banner2
+sleep 1
+echo " "
+printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m SEDANG MENGOPERASIKAN SISTEM...... \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+echo $WT" OPEN TO DDOS V2 BY PURWOKERTO MALWARE CYBER "
+echo $WT" KETIK ${CYAN}YA ${WT}BUAT MASUK KETIK ${CYAN}NO ${WT}BUAT EXIT"
+echo " "
+read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' pmc
+if [[ $pmc == YA || $pmc == YA ]]; then
+bash setup2.sh
+elif [[ $pmc == NO || $pmc == NO ]]; then
+banner2
+menuex
+else
+printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+sleep 1
+ddos2
+fi
+}
+
+ddos3() {
+banner2
+sleep 1
+echo " "
+printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m SEDANG MENGOPERASIKAN SISTEM...... \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+echo $WT" OPEN TO DDOS V3 BY PURWOKERTO MALWARE CYBER "
+echo $WT" KETIK ${CYAN}YA ${WT}BUAT MASUK KETIK ${CYAN}NO ${WT}BUAT EXIT"
+echo " "
+read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' pmc
+if [[ $pmc == YA || $pmc == YA ]]; then
+bash setup3.sh
+elif [[ $pmc == NO || $pmc == NO ]]; then
+banner2
+menuex
+else
+printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
+sleep 1
+ddos2
 fi
 }
 
